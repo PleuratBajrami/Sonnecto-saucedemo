@@ -19,6 +19,5 @@ public class RemoveProductsFromCartTest {
         dashboardPage.cartLink.click();
         cartPage.verifyUserOnCartPage();
         cartPage.removeProductButton.click();
-        cartPage.verifyRemoveProducts();
     }
 }

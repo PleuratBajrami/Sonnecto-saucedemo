@@ -28,8 +28,6 @@ public class CartPage {
     public void verifyAddedProductsAreVisible(){
         Assert.assertTrue(addedProducts.isDisplayed());
     }
-    public void verifyRemoveProducts(){
-        Assert.assertTrue(addedProducts.isDisplayed());
-    }
+
 
 }
