@@ -16,4 +16,6 @@ public class DashboardPage {
     @FindBy(id = "add-to-cart-sauce-labs-backpack")
     public WebElement addToCartButton;
 
+
+
 }
