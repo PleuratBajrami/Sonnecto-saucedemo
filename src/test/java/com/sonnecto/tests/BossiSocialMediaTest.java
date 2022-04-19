@@ -5,7 +5,7 @@ import com.sonnecto.pages.LoginPage;
 import com.sonnecto.utilities.ConfigurationReader;
 import org.testng.annotations.Test;
 
-public class ReachSocialMediaTest {
+public class BossiSocialMediaTest {
     LoginPage loginPage = new LoginPage();
     DashboardPage dashboardPage = new DashboardPage();
 
