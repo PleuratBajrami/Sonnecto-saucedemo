@@ -53,10 +53,16 @@ public class DashboardPage {
     @FindBy(id = "react-burger-menu-btn")
     public WebElement menuDropdown;
 
+    @FindBy(id="reset_sidebar_link")
+    public WebElement resetButton;
+
    public void socialMediaPlatforms(String socialMediaName){
        String b = "//ul/li/a[contains(text(),'"+socialMediaName+"')]";
        WebElement socialMediaPlatform = Driver.getDriver().findElement(By.xpath(b));
        socialMediaPlatform.click();
    }
+
+   @FindBy(xpath = "//a[@class='shopping_cart_link']/span")
+    public WebElement shoppingCartNumber;
 
 }
