@@ -12,7 +12,7 @@ public class CheckoutTest {
     CartPage cartPage = new CartPage();
 
     @Test
-    public void correctCredentialsLogIn(){
+    public void proceedingCheckoutTest(){
         loginPage.login(ConfigurationReader.getProperty("username"), ConfigurationReader.getProperty("password"));
         dashboardPage.cartLink.click();
         cartPage.checkoutButton.click();
