@@ -47,4 +47,10 @@ public class DashboardPage {
 
     }
 
+    @FindBy(id = "logout_sidebar_link")
+    public WebElement LogoutButton;
+
+    @FindBy(id = "react-burger-menu-btn")
+    public WebElement MenuDropdown;
+
 }
