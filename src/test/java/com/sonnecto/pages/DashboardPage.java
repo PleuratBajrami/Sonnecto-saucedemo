@@ -33,18 +33,13 @@ public class DashboardPage {
     }
 
     @FindBy(className = "shopping_cart_badge")
-    public WebElement number_of_products_added_on_the_cart_icon;
+    public WebElement numberOfProductsOnIcon;
 
 
     @FindBy(xpath = "(//div[@class='inventory_item_name'])")
     public List<WebElement> allProducts;
 
     public void listOfProcuts(int index){
-
-
-        String a = "(//div[@class='inventory_item_name'])["+ index + "]";
-        WebElement products = Driver.getDriver().findElement(By.xpath(a));
-        products.click();
 
             String a = "(//div[@class='inventory_item_name'])["+ index + "]";
             WebElement products = Driver.getDriver().findElement(By.xpath(a));

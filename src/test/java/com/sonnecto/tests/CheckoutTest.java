@@ -6,7 +6,7 @@ import com.sonnecto.pages.LoginPage;
 import com.sonnecto.utilities.ConfigurationReader;
 import org.testng.annotations.Test;
 
-public class checkoutTest {
+public class CheckoutTest {
     LoginPage loginPage = new LoginPage();
     DashboardPage dashboardPage = new DashboardPage();
     CartPage cartPage = new CartPage();
