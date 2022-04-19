@@ -4,6 +4,7 @@ import com.sonnecto.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 public class DashboardPage {
     public DashboardPage(){
@@ -15,5 +16,14 @@ public class DashboardPage {
 
     @FindBy(id = "add-to-cart-sauce-labs-backpack")
     public WebElement addToCartButton;
+
+    @FindBy(className = "product_sort_container")
+    public WebElement dropDown;
+    public void sortDrodownProducts(int index){
+
+        Select select = new Select(dropDown);
+        select.selectByIndex(index);
+
+    }
 
 }
