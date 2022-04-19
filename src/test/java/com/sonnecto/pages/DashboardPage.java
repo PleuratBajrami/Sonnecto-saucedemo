@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 
 import java.util.List;
 
@@ -56,6 +57,9 @@ public class DashboardPage {
     @FindBy(id="reset_sidebar_link")
     public WebElement resetButton;
 
+    @FindBy(xpath = "inventory_sidebar_link")
+    public WebElement allItemsButton;
+
    public void socialMediaPlatforms(String socialMediaName){
        String b = "//ul/li/a[contains(text(),'"+socialMediaName+"')]";
        WebElement socialMediaPlatform = Driver.getDriver().findElement(By.xpath(b));
@@ -64,5 +68,15 @@ public class DashboardPage {
 
    @FindBy(xpath = "//a[@class='shopping_cart_link']/span")
     public WebElement shoppingCartNumber;
+
+   @FindBy(id = "about_sidebar_link")
+    public WebElement aboutButton;
+
+   @FindBy(xpath = "//a[@class='nav-image-link']")
+    public WebElement sauceLabsReachConfirmation;
+
+    public void aboutButtonConfirmation(){
+        Assert.assertTrue(sauceLabsReachConfirmation.isDisplayed());
+    }
 
 }
