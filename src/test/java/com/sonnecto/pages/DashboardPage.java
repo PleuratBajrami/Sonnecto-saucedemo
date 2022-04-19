@@ -9,6 +9,8 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
 
+import java.util.List;
+
 public class DashboardPage {
     public DashboardPage(){
         PageFactory.initElements(Driver.getDriver(), this);
@@ -19,6 +21,7 @@ public class DashboardPage {
 
     @FindBy(id = "add-to-cart-sauce-labs-backpack")
     public WebElement addToCartButton;
+
 
     @FindBy(className = "product_sort_container")
     public WebElement dropDown;
@@ -32,14 +35,20 @@ public class DashboardPage {
     @FindBy(className = "shopping_cart_badge")
     public WebElement number_of_products_added_on_the_cart_icon;
 
+
     @FindBy(xpath = "(//div[@class='inventory_item_name'])")
     public List<WebElement> allProducts;
 
     public void listOfProcuts(int index){
 
+
         String a = "(//div[@class='inventory_item_name'])["+ index + "]";
         WebElement products = Driver.getDriver().findElement(By.xpath(a));
         products.click();
+
+            String a = "(//div[@class='inventory_item_name'])["+ index + "]";
+            WebElement products = Driver.getDriver().findElement(By.xpath(a));
+            products.click();
 
     }
 
