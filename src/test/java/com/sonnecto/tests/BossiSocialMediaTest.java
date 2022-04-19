@@ -12,7 +12,7 @@ public class BossiSocialMediaTest {
     @Test
     public void ReachAllSocialMediaTest (){
         loginPage.login(ConfigurationReader.getProperty("username"),ConfigurationReader.getProperty("password"));
-
+        dashboardPage.socialMediaPlatforms("witt");
 
     }
 }

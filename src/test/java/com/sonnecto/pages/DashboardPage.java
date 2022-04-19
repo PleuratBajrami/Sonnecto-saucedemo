@@ -53,4 +53,10 @@ public class DashboardPage {
     @FindBy(id = "react-burger-menu-btn")
     public WebElement menuDropdown;
 
+   public void socialMediaPlatforms(String socialMediaName){
+       String b = "//ul/li/a[contains(text(),'"+socialMediaName+"')]";
+       WebElement socialMediaPlatform = Driver.getDriver().findElement(By.xpath(b));
+       socialMediaPlatform.click();
+   }
+
 }
