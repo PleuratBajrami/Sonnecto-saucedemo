@@ -11,7 +11,7 @@ public class ReachSocialMediaTest {
 
     @Test
     public void ReachAllSocialMediaTest (){
-        loginPage.login (ConfigurationReader.getProperty ("username"),ConfigurationReader.getProperty ("password"));
+        loginPage.login(ConfigurationReader.getProperty("username"),ConfigurationReader.getProperty("password"));
 
 
     }
